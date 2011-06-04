@@ -10,5 +10,5 @@ get '/' do
     table = doc.search(".tableListingTable")[0]
     table.raw_attributes = { "border" => "1" }
     table.to_s
-  }.join("<p>")
+  }.join("<p>") + date
 end
